@@ -13,7 +13,7 @@ const routes: Routes = [
   },
   {
     path: 'countries',
-    loadChildren: () => import('./body/body-routing.module').then( m => m.BodyRoutingModule)
+    loadChildren: () => import('./body/body.module').then( m => m.BodyModule)
   },
   {
     path: '**',

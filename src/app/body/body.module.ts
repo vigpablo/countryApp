@@ -9,6 +9,7 @@ import { CountryPageComponent } from './pages/by-id/country-page.component';
 import { RouterModule } from '@angular/router';
 import { CountryTableComponent } from './components/country-table/country-table.component';
 import { LoadingSpinnerComponent } from './components/loading-spinner/loading-spinner.component';
+import { BodyRoutingModule } from './body-routing.module';
 
 
 
@@ -26,7 +27,7 @@ import { LoadingSpinnerComponent } from './components/loading-spinner/loading-sp
   ],
   imports: [
     CommonModule,
-    RouterModule,
+    BodyRoutingModule,
   ],
   exports: [
     BodyComponent,
