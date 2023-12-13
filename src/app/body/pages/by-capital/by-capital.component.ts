@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { CacheStore } from 'src/app/shared/interfaces/cache-store-interface';
 import { Country } from 'src/app/shared/interfaces/country';
 import { CountriesService } from 'src/app/shared/services/countries.service';
 
@@ -14,7 +16,9 @@ export class ByCapitalComponent implements OnInit {
   public isLoading: boolean = false
   public initialValue: string = ''
 
+
   constructor( private countriesService: CountriesService ) {}
+
 
   ngOnInit(): void {
     this.countries = this.countriesService.cacheStore.byCapital.countries;
@@ -31,5 +35,7 @@ export class ByCapitalComponent implements OnInit {
       this.isLoading = false;
     })
   }
+
+
 
 }

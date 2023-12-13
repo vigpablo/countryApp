@@ -16,6 +16,7 @@ export class CountriesService {
     byRegion:    { region: '', countries: [] },
   }
 
+
   constructor(private http: HttpClient) {
     this.loadFromLocalStorage();
    }
@@ -49,7 +50,7 @@ export class CountriesService {
   };
 
   searchCapital( term: string ): Observable<Country[]> {
-    return this.getCountriesRequest(`${this.apiUrl}/capital/${term}`)
+    return this.getCountriesRequest(`${this.apiUrl}/capital/${term}`) //lo mismo que 'https://restcountries.com/v3.1/capital/'+`${term}`
     .pipe(
       tap( countries => this.cacheStore.byCapital = {term, countries}),
       tap( () => this.saveToLocalStorage() )
@@ -71,5 +72,7 @@ export class CountriesService {
       tap( () => this.saveToLocalStorage() )
     )
   }
+
+
 
 }

@@ -7,7 +7,7 @@ import { CountriesService } from 'src/app/shared/services/countries.service';
 @Component({
   selector: 'app-country-page',
   templateUrl: './country-page.component.html',
-  styleUrls: ['./country-page.component.scss']
+  styleUrls: []
 })
 export class CountryPageComponent implements OnInit {
 
@@ -35,13 +35,5 @@ export class CountryPageComponent implements OnInit {
 }
 
 
-  // ngOnInit(): void {
-  //   this.activatedRoute.params
-  //   .subscribe( ({id}) => {
-
-  //     this.countriesService.searchCountryByAlphaCode( id )
-  //       .subscribe( country => {
-  //         console.log({country})
-  //       });
 
 

@@ -1,18 +1,18 @@
 
 <div *ngIf="countries.length === 0, else table" class="alert alert-warning text-center">
-  No hay países que mostrar
+  No countries to show
 </div>
 
 <ng-template #table>
   <table class="table table hover">
     <thead>
-      <tr>
+      <tr class="border-bottom">
         <th>#</th>
         <th>Icon</th>
-        <th>Bandera</th>
+        <th>Flag</th>
+        <th>Name</th>
         <th>Capital</th>
-        <th>Nombre</th>
-        <th>Población</th>
+        <th>Population</th>
       </tr>
     </thead>
     <tbody>

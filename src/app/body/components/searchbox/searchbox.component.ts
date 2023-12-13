@@ -4,7 +4,7 @@ import { Subject, debounceTime } from 'rxjs';
 @Component({
   selector: 'app-searchbox',
   templateUrl: './searchbox.component.html',
-  styleUrls: ['./searchbox.component.scss']
+  styleUrls: []
 })
 export class SearchboxComponent implements OnInit, OnDestroy {
 

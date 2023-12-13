@@ -5,12 +5,8 @@ import { BodyComponent } from './body/body.component';
 const routes: Routes = [
   // {
   //   path: '',
-  //   component: BodyComponent
+  //   component: BodyComponent,
   // },
-  {
-    path: 'home',
-    component: BodyComponent
-  },
   {
     path: 'countries',
     loadChildren: () => import('./body/body.module').then( m => m.BodyModule)

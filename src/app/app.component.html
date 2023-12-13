@@ -1,10 +1,14 @@
-<div class="row mt-4">
-  <div class="col-3">
-    <!-- sidebar -->
-    <app-sidebar></app-sidebar>
+<body class="app" data-bs-theme="dark">
+  <div class="container pt-2">
+    <div class="row mt-4">
+      <div class="col-3">
+        <!-- sidebar -->
+        <app-sidebar></app-sidebar>
+      </div>
+      <div class="col">
+        <!-- body -->
+        <router-outlet></router-outlet>
+      </div>
+    </div>
   </div>
-  <div class="col">
-    <!-- body -->
-    <router-outlet></router-outlet>
-  </div>
-</div>
+</body>
